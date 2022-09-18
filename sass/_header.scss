@@ -1,0 +1,278 @@
+hr{
+
+    margin-top: 2rem;
+
+}
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+    
+}
+
+.logo{
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+    &__heading{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: 5px;
+
+    }
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        fill: #f9f9f9;
+        margin-top: .5rem;
+    }
+
+
+}
+
+.search{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__input{
+        width: 100%;
+        padding: .7rem 2rem;
+        
+
+    }
+
+    &__button{
+        border: none;
+        padding: .7rem 1rem;
+        background-color: #f9f9f9;
+
+    }
+
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+
+    }
+}
+
+.user-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__icon-box{
+
+
+    }
+
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+        margin-right: 2rem;
+
+    }
+
+    &__user{
+
+    }
+
+    &__user-photo{
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+}
+
+
+.user-option{
+    // padding: 4rem;
+
+
+&__category{
+
+
+    display: flex;
+    margin-left: 25rem;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    // overflow: hidden;
+    position: fixed;
+    top: 6rem;
+    width: 100%;
+    z-index: 4;
+    // background-color: #CCC;
+    
+    
+    
+    &-All{
+        padding: 1rem;
+        margin-right: 2rem;
+
+    }
+
+    &-selection{
+        margin-right: 2rem;
+        
+        
+
+    }
+}
+
+}
+
+.btn{
+    border: none;
+    font-size: 2rem;
+    word-wrap: none;
+    border: 1px solid #CCC;
+    border-radius: 900px;
+    padding: .5rem 1rem;
+    
+}
+
+.content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    justify-content: center;
+    margin-top: 6rem;
+    
+    
+
+    &__video{
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+        margin:2rem;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        // grid-gap: 1rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        
+        &-item{
+            width: 100%;
+            // display: flex;
+            // align-items: flex-start;
+            // justify-content: center;
+        }
+        
+    }
+
+
+}
+
+.sidebar{
+    // background-color: orangered;
+    margin-left: 2rem;
+    position: absolute;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    list-style: none;
+
+    flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.side-nav{
+    font-size: 1.5rem;
+    list-style: none;
+    margin-top: 3.5rem;
+    
+    // color: black;
+
+
+    &__item{
+        // list-style: none;
+        overflow: hidden;
+    }
+
+    &__link{
+        display: block;
+        // width: 20rem;
+
+        // box-shadow: inset 0 0 0 0 #54b3d6;
+        padding: 0 .25rem;
+        margin: 0 -.25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    }
+
+
+
+    &__link:link,
+    &__link:visited{
+        color: rgba(43, 43, 43, 0.767);
+        font-weight: 700;
+        line-height: 1.5;
+        text-decoration: none;
+        
+    }
+
+    &__link:hover {
+        color: rgb(43, 43, 43, 0.767);
+        box-shadow: inset 200px 0 0 0 #CCC;
+      }
+
+
+}
+
+
+
+.video-bottom-section {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .channel-icon {
+    margin-right: .75rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #AAA;
+  }
+
+  .video-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .video-channel-name {
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+  }
+
+
+.video-channel-name:hover {
+    color: #111;
+  }
+  
+  .video-channel-name,
+  .video-metadata {
+    color: #555;
+  }
